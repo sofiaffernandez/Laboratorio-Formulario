@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(173, 194, 231);
+}
+body{
+    height: 100vh;
+    background-color: rgb(37, 37, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    padding: 1rem;
+    background-color: rgba(33, 33, 61, 0.568);
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: 2px solid rgb(53, 53, 83);
+    border-radius: 5px;
+}
+h1{
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+div{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+div input{
+    flex: auto;
+    z-index: 1;
+    
+}
+div span{
+    align-self: flex-end; 
+    position: absolute;
+    z-index: 2;
+    left: 90%;
+}
+
+
+label{
+    font-weight: 400;
+    font-size:  x-small;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+input{
+height: 1.5rem;
+}
+button{
+    font-size: x-small;
+    align-self: center;
+    background-color: rgb(109, 109, 221);
+    color: white;
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;   
+}
+button:hover {
+    opacity: 0.8;
+  }
+
+p{
+    font-size: x-small;
+    color: red;
+}

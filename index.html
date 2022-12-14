@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form class="container" action="#">
+        <fieldset>
+            <h1>Create Account</h1>
+            <label for="name">Nombre</label> 
+            <div>
+            <input type="text" name="name" id="name" class="name"  oninput="validateName()">
+                <span class="errorName" ><img src="./images/error-icon.svg" class="icon" display="none"></span>
+                <span class="correctName" ><img src="./images/success-icon.svg" class="icon"></span>
+            </div>
+                <p class="rellenarN"></p>
+                <label for="email">Email</label>
+            <div>
+                <input type="email" name="email" id="email" class="email"  oninput="validateEmail()">
+                <span class="errorEmail" ><img src="./images/error-icon.svg" class="icon"></span>
+            <span class="correctEmail" ><img src="./images/success-icon.svg" class="icon"></span>
+        </div>
+            <p class="rellenarE"></p> 
+            <label for="clave">Clave</label>
+        <div>
+            <input type="password" name="clave" id="clave" class="clave"  oninput="validateClave()">
+            <span class="errorClave" ><img src="./images/error-icon.svg" class="icon"></span>
+            <span class="correctClave" ><img src="./images/success-icon.svg" class="icon"></span>
+        </div>
+            <p class="rellenarC"></p>
+            <label for="confirmClave">Confirme su clave</label>
+        <div>
+            <input type="password" name="confirmClave" id="confirmClave" class="confirmClave"  oninput="validateConfirmClave()">
+            <span class="errorConfirmClave" ><img src="./images/error-icon.svg" class="icon"></span>
+            <span class="correctConfirmClave" ><img src="./images/success-icon.svg" class="icon"></span>
+        </div>
+            <p class="rellenarCC"></p> 
+
+
+        
+            <button type="button" id="btnEnviar" onclick="btnEnviar()">ENVIAR</button>
+        </fieldset>
+    </form>
+    <script src="index.js"> </script>
+</body>
+</html>
