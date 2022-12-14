@@ -32,10 +32,8 @@ function validateName() {
             document.querySelector(".correctName").style.display= "none"
             return false;
             }
-        }   
-        
-        
-    }
+        }            
+}
 function validateEmail(){       
     let email = document.querySelector('input[name="email"]').value;
     let inputEmail = document.querySelector('.email')
@@ -74,20 +72,21 @@ function validateClave() {
             document.querySelector('.errorClave').style.display = 'inline';
             return false;
     } else {
-        if(clave.lenght > 8){
+        if(clave.length >=9 ){
             document.querySelector(".rellenarC").style.display= "inline"
             document.querySelector(".rellenarC").innerHTML= "No debe tener más de 8 carácteres"
             inputClave.style.border= "2px solid red"
             document.querySelector(".correctClave").style.display= "none"
             document.querySelector('.errorClave').style.display = 'inline';
             return false;
-        }
+                }
         else {
             inputClave.style.border= "2px solid green"
             document.querySelector(".rellenarC").style.display= "none"
             document.querySelector('.errorClave').style.display = 'none';
             document.querySelector(".correctClave").style.display= "inline"
             return true;
+            
         }
     }
 } 
