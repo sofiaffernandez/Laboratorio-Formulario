@@ -124,7 +124,7 @@ function validateConfirmClave() {
 
 btnEnviar.addEventListener ("click", (e) => {
     if (e.target.matches("button")){
-        if (validateName() === false & validateEmail()=== false & validateClave()===false & validateConfirmClave()===false){
+        if (validateName() === false || validateEmail()=== false || validateClave()===false || validateConfirmClave()===false){
             alert ("Rellena correctamente todos los campos");
         }
         else if(validateName() === true & validateEmail()=== true & validateClave()===true & validateConfirmClave()===true){
