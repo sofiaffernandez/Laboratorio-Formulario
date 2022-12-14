@@ -17,7 +17,7 @@ function validateName() {
         document.querySelector(".correctName").style.display= "none"
         return false;
     } else {
-        if(/^[A-Z]+$/i.test(name)){
+        if(/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g.test(name)){
         inputName.style.border= "2px solid green"
         document.querySelector(".rellenarN").style.display= "none"
         document.querySelector(".errorName").style.display= "none"
@@ -74,7 +74,7 @@ function validateClave() {
             document.querySelector('.errorClave').style.display = 'inline';
             return false;
     } else {
-        if(clave.lenght >= 9){
+        if(clave.lenght > 8){
             document.querySelector(".rellenarC").style.display= "inline"
             document.querySelector(".rellenarC").innerHTML= "No debe tener más de 8 carácteres"
             inputClave.style.border= "2px solid red"
